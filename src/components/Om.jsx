@@ -20,7 +20,7 @@ import idli1 from "../assets/idli1.png";
 import idli2 from "../assets/idli2.png";
 import paratha1 from "../assets/paratha1.png";
 import paratha2 from "../assets/paratha2.png";
-import thali1 from "../assets/thali1.png";
+//import thali1 from "../assets/thali1.png"; 
 import thali2 from "../assets/thali2.png";
 import paneerNaan from "../assets/paneerNaan.png";
 import curryNaan from "../assets/curryNaan.png";
@@ -34,14 +34,14 @@ import vegetableBiryani from "../assets/vegetableBiryani.png";
 
 const menuItems = [ 
   { name: "Plain Dosa", price: 40, icon: "🥞", category: "Breakfast", image1: dosa1 },
-  { name: "Masala Dosa", price: 60, icon: "🥞", category: "Breakfast", image1: dosa2 },
+  { name: "Masala Dosa", price: 60, icon: "🥞", category: "Breakfast", image1: dosa2 }, 
   { name: "Plain Steamed Idli", price: 30, icon: "🍥", category: "Breakfast", image1: idli1 },
   { name: "Idli Chutney Trio", price: 50, icon: "🍥", category: "Breakfast", image1: idli2 }, 
   { name: "Delicious Aloo Paratha", price: 40, icon: "🥙", category: "Breakfast", image1: paratha1 },
   { name: "Butter Paratha", price: 20, icon: "🥙", category: "Breakfast", image1: paratha2 }, 
   { name: "Amritsari Chole Bhature", price: 40, category: "Breakfast", image1: choleBhature }, 
   { name: "Shahi Poha", price: 60, category: "Breakfast", image1: poha }, 
-  { name: "Thali-e-Khaas", price: 220, icon: "🍛", category: "Lunch", image1: thali1 },
+  //{ name: "Thali-e-Khaas", price: 220, icon: "🍛", category: "Lunch", image1: thali1 }, 
   { name: "Shahi Bhojan Thali", price: 220, icon: "🍛", category: "Lunch", image1: thali2 }, 
   { name: "Vegetable Pulao", price: 80, icon: "🍛", category: "Lunch", image1: vegetablePulao },
   { name: "Cshew Rice", price: 140, icon: "🍛", category: "Lunch", image1: cshewRice }, 
@@ -70,7 +70,7 @@ const Menu = () => {
   // Trigger toast
   const triggerToast = () => {
     setShowToast(true);
-    setTimeout(() => setShowToast(false), 1500); // Auto hide after 2s
+    setTimeout(() => setShowToast(false), 1500);
   };
 
   const filteredItems =
@@ -98,7 +98,7 @@ const Menu = () => {
               ${selectedCategory === cat ? "bg-amber-600 text-white" : "bg-white text-amber-600 border border-amber-300"}`}
             >
               {cat}
-            </button>
+            </button> 
           ))}
         </div>
 
@@ -132,7 +132,7 @@ const Menu = () => {
         </div>
       </div>
 
-      {/* ✅ Custom Toast */}
+      {/*Custom Toast */}
       {showToast && (
         <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-2 rounded-full shadow-lg z-50 transition-all duration-500 ease-in-out animate-bounce">
           🛒 Added to Cart!
@@ -142,4 +142,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Menu; 

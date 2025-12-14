@@ -1,12 +1,9 @@
 import React, { createContext, useContext, useState } from "react";
 
-// Create context
 const CartContext = createContext();
 
-// Hook to use the cart
 export const useCart = () => useContext(CartContext);
 
-// Provider component
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 

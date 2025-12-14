@@ -10,9 +10,9 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");           // State for email input
-  const [showPopup, setShowPopup] = useState(false); // State for popup
-  const [error, setError] = useState("");            // State for email validation error
+  const [email, setEmail] = useState("");           
+  const [showPopup, setShowPopup] = useState(false); 
+  const [error, setError] = useState("");            
 
   const socialLinks = [
     { icon: <FaFacebookF className="sm:size-4 size-3" />, color: "bg-blue-600" },
@@ -28,7 +28,6 @@ const Footer = () => {
 
   const toHrefId = (text) => `#${text.toLowerCase().replace(/\s+/g, "")}`;
 
-  // ✅ Email validation function
   const handleSubscribe = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -42,12 +41,10 @@ const Footer = () => {
       return;
     }
 
-    // Clear error if valid
     setError("");
     setShowPopup(true);
     setEmail("");
 
-    // Hide popup after 2 seconds
     setTimeout(() => setShowPopup(false), 2000);
   };
 
@@ -150,17 +147,16 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ✅ Popup after successful subscription */}
+        
         {showPopup && (
           <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-2 rounded-full shadow-lg z-50 animate-bounce">
             🎉 Subscribed successfully!
           </div>
         )}
 
-        {/* Copyright */}
         <div className="border-t border-orange-200 pt-6 sm:pt-8 text-center space-y-3 sm:space-y-4">
           <p className="text-gray-600 font-comfortaa text-sm sm:text-base md:text-xl">
-            &copy; {new Date().getFullYear()} Foodie's Hub. All rights reserved.
+            &copy; {new Date().getFullYear()} Foodie's Duniya. All rights reserved.
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ import { Link, scroller } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState(""); 
 
   const menuItems = [
     { icon: <FaHome />, text: "Home", target: "home" },

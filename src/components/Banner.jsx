@@ -7,10 +7,10 @@ import Bannersmall1 from "../assets/Bannersmall1.png";
 import Bannersmall2 from "../assets/Bannersmall2.png";
 import Bannersmall3 from "../assets/Bannersmall3.png";
 import FireIcon from "../assets/FireIcon.png";
-import Bannervideo from "../assets/Bannervideo.mp4";
+import Bannervideo from "../assets/Bannervideo.mp4"; 
 
 const Banner = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(false); 
 
   return (
     <div id="home" className="bg-white pt-12 md:pt-24 min-h-[500px] flex items-center">
@@ -22,7 +22,7 @@ const Banner = () => {
               onClick={() => setShowVideo(false)}
               className="absolute -top-8 right-0 text-white text-2xl"
             >
-              ×
+              × 
             </button>
             <div className="aspect-video">
               <iframe

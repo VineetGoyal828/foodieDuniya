@@ -5,18 +5,18 @@ import Wws from "./components/Wws";
 import Om from "./components/Om";
 import Wts from "./components/Wts";
 import Footer from "./components/Footer";
-import Login from "./components/login";   // ✅ Login section
-import Cart from "./components/cart";     // ✅ Cart section 
+import Login from "./components/login";   
+import Cart from "./components/cart";      
 
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50">
       
-      {/* ✅ Sticky Navbar */}
+      {/* Sticky Navbar */}
       <Navbar />
       <br />
 
-      {/* ✅ Main Sections */}
+      {/* Main Sections */}
       <main className="flex-1 w-full">
         <section id="home" className="w-full">
           <Banner />
@@ -34,7 +34,7 @@ const App = () => {
           <Wts />
         </section>
 
-        {/* ✅ Login and Cart Sections for SPA */}
+        {/* Login and Cart Sections for SPA */}
         <section id="login" className="w-full">
           <Login />
         </section>
@@ -44,7 +44,7 @@ const App = () => {
         </section>
       </main>
 
-      {/* ✅ Footer */}
+      {/* Footer */}
       <div className="mt-auto">
         <Footer />
       </div>
